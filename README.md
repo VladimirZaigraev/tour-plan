@@ -1,2 +1,3 @@
 # tour-plan
-Project Vladimir Zaigraev
+
+Project of Vladimir Zaigraev
