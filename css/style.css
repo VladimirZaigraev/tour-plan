@@ -13,4 +13,13 @@
   font-style: normal;
   font-display: swap;
 }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli-Regular', sans-serif;
+}
 /*# sourceMappingURL=style.css.map */
