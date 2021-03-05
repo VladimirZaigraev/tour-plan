@@ -21,6 +21,7 @@
 
 body {
   font-family: 'Muli-Regular', sans-serif;
+  background-color: #F5FAFE;
   color: #333333;
 }
 
@@ -544,7 +545,10 @@ template {
     max-width: 700px;
     width: 92%;
   }
-  .navbar__search, .navbar-menu, .navbar__user {
+}
+
+@media (max-width: 649px) {
+  .container .navbar__search, .container .navbar-menu, .container .navbar__user {
     display: none;
   }
   .menu-button {
@@ -579,5 +583,32 @@ template {
   .logo {
     width: 99px;
   }
+}
+
+.breadcrumb-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 18px 0;
+  margin: 0;
+  list-style: none;
+}
+
+.breadcrumb-list__item {
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.breadcrumb-list__item:not(:last-child)::after {
+  content: '/';
+  margin-right: 4px;
+}
+
+.breadcrumb-list__link {
+  text-decoration: none;
+  color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
