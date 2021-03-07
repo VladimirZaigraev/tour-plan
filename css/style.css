@@ -519,7 +519,7 @@ template {
 }
 
 .hotel {
-  padding-top: 23px;
+  padding-top: 18px;
   padding-bottom: 70px;
 }
 
@@ -551,8 +551,10 @@ template {
 
 .hotel-name {
   font-size: 24px;
-  line-height: 30px;
+  line-height: 26px;
   font-weight: bold;
+  font-family: Mulish;
+  font-style: normal;
 }
 
 .hotel-wrapper {
@@ -574,6 +576,13 @@ template {
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  margin-left: 2px;
+}
+
+.stars__img {
+  width: 7px;
+  height: 7px;
+  margin-left: -1px;
 }
 
 .offer {
@@ -678,6 +687,9 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .hotel {
+    padding-top: 0px;
   }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
