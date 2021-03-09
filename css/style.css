@@ -554,6 +554,12 @@ template {
   margin: 0;
 }
 
+.hotel-info-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .hotel-name {
   font-size: 24px;
   line-height: 26px;
@@ -680,6 +686,16 @@ template {
 .slider-button__prev {
   left: 18px;
   background-image: url(../img/arrow-prew.svg);
+}
+
+.booking {
+  background-color: #0A223D;
+  border-radius: 8px;
+  max-width: 350px;
+  min-height: 210px;
+  padding: 28px;
+  font-family: Nunito;
+  color: #ffffff;
 }
 
 @media (max-width: 1200px) {
