@@ -234,15 +234,15 @@
               <button class="button booking__button">View Other Options</button>
             </div>
             <!-- /.booking -->
-            <div class="map">
-              <iframe
+            <div class="map" id="map">
+              <!--<iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.576251230949!2d100.8804122143534!3d12.934934519182613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310296059bd3779b%3A0x37191e723a1a258!2sHilton%20Pattaya!5e0!3m2!1sru!2sru!4v1615312153743!5m2!1sru!2sru"
                 width="100%"
                 height="100%"
                 style="border-radius: 4px; border: none"
                 allowfullscreen=""
                 loading="lazy"
-              ></iframe>
+              ></iframe>-->
             </div>
             <!-- /.map -->
           </div>
@@ -255,5 +255,19 @@
     <!-- /.hotel -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=601647fd-ee95-43e0-b798-397a50750529&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      ymaps.ready(init);
+      function init() {
+        var myMap = new ymaps.Map("map", {
+          center: [12.93434771, 100.88389939],
+
+          zoom: 16,
+        });
+      }
+    </script>
   </body>
 </html>
