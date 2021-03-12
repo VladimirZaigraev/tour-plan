@@ -846,10 +846,6 @@ template {
 .newsletter {
   position: relative;
   padding: 98px 0px 87px 0px;
-  background-image: url(../img/newsletter-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .newsletter::before {
@@ -1204,19 +1200,19 @@ template {
     margin-top: 10px;
     margin-bottom: 0;
   }
-  .hotel-wrapper {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .hotel-wrapper__rating {
-    display: none;
-  }
-  .hotel-wrapper__offer {
+  .hotel-info__offer {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
     margin-left: 0;
+  }
+  .hotel-info__rating {
+    display: none;
+  }
+  .hotel-wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .hotel-right {
     -webkit-box-orient: vertical;
