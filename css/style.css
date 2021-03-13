@@ -1049,6 +1049,11 @@ template {
   margin-bottom: 4px;
 }
 
+.reviews-slider-rating__stars {
+  width: 6px;
+  height: 6px;
+}
+
 .reviews-slider__text {
   max-width: 537px;
   max-height: 266px;
