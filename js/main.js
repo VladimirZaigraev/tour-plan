@@ -39,4 +39,8 @@ const reviewsSlider = new Swiper(".reviews-slider", {
     onlyInViewport: false,
   },
 });
-$(".newsletter").parallax({ imageSrc: "img/newsletter-bg.jpg" });
+//$(".newsletter").parallax({
+//imageSrc: "img/newsletter-bg.jpg",
+//naturalWidth: "2880px",
+//naturalHeight: "1913px",
+//});

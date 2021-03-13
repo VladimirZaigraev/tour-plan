@@ -846,17 +846,7 @@ template {
 .newsletter {
   position: relative;
   padding: 98px 0px 87px 0px;
-}
-
-.newsletter::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
+  overflow: hidden;
   background-color: rgba(10, 34, 61, 0.8);
 }
 
@@ -900,8 +890,6 @@ template {
   position: relative;
   width: 350px;
   height: 50px;
-  border-radius: 4px;
-  overflow: hidden;
 }
 
 .subscribe__input {
@@ -914,12 +902,15 @@ template {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .subscribe__button {
   position: absolute;
   min-width: 65px;
-  right: 0;
+  max-width: 150px;
+  left: 285px;
   top: 0;
   height: 100%;
   border: none;
@@ -928,6 +919,13 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-radius: 0px 4px 4px 0;
+}
+
+.subscribe__button::after {
+  content: ' ';
 }
 
 .reviews {
@@ -1053,10 +1051,101 @@ template {
 
 .reviews-slider__text {
   max-width: 537px;
+  max-height: 266px;
   font-weight: normal;
   font-size: 12px;
   line-height: 160%;
   text-align: justify;
+  overflow: auto;
+}
+
+.activities {
+  padding: 60px 0 98px 0;
+}
+
+.activities__title {
+  margin-bottom: 57px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.activities-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.activities-card {
+  width: 255px;
+  height: 255px;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 20px;
+  padding: 24px 26px;
+}
+
+.activities-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  z-index: 0;
+}
+
+.activities-card__img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.activities-card__title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  z-index: 3;
+  margin-bottom: 18px;
+}
+
+.activities-card__button {
+  z-index: 3;
+  padding: 7px 22px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 @media (max-width: 1200px) {
@@ -1071,6 +1160,9 @@ template {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .activities-card {
+    width: 47%;
   }
 }
 
@@ -1135,6 +1227,9 @@ template {
   .reviews-slider__text {
     max-width: 455px;
   }
+  .activities-card {
+    width: 339px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1153,6 +1248,9 @@ template {
   }
   .map-slider__text {
     max-width: 80%;
+  }
+  .activities-card {
+    width: 100%;
   }
 }
 
@@ -1283,10 +1381,22 @@ template {
   .subscribe {
     width: 100%;
   }
+  .subscribe__button {
+    left: auto;
+    right: 0;
+  }
   .reviews__title {
     font-size: 18px;
     line-height: 23px;
     margin-bottom: 42px;
+  }
+  .activities {
+    padding-top: 40px;
+  }
+  .activities__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 36px;
   }
 }
 /*# sourceMappingURL=style.css.map */
