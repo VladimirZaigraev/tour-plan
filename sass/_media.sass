@@ -11,6 +11,9 @@
   .activities
     &-card
       width: 47%
+  .packages
+    &-wrapper
+      grid-template-columns: repeat(auto-fill, 300px)
 @media ( max-width:  992px )
   .container, .newsletter-wrapper
     max-width: 700px
@@ -55,6 +58,13 @@
   .activities
     &-card
       width: 339px
+  .packages
+    &-wrapper
+      grid-template-columns: 1fr 1fr
+    &-card
+      max-width: 500px
+      &--active
+        max-width: 100%
 
 @media ( max-width: 768px )
   .container, .newsletter-wrapper
@@ -145,6 +155,18 @@
     &__title
       font-size: 24px
       line-height: 23px
+@media (max-width: 700px)
+  .packages
+    &-wrapper
+      grid-template-columns: 1fr
+    &-card
+      max-width: 100%
+      &--active
+        grid-auto-flow: column
+        grid-template-rows: 250px 1fr
+        grid-template-columns: 1fr
+        grid-column: span 1
+
 @media ( max-width: 576px )
   .logo
     width: 99px
@@ -174,3 +196,8 @@
       font-size: 18px
       line-height: 23px
       margin-bottom: 36px
+  .packages
+    &-card
+      &__button
+        width: 100%
+        grid-column: 1 / 3
