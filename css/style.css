@@ -1390,8 +1390,9 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   grid-row: 2 / 4;
@@ -1445,6 +1446,10 @@ template {
   margin: 0 43px 0 0;
 }
 
+.footer__title--mb-3 {
+  margin-bottom: 30px;
+}
+
 .footer__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1461,10 +1466,6 @@ template {
 
 .footer__item--mb-2 {
   margin-bottom: 20px;
-}
-
-.footer__item--mb-3 {
-  margin-bottom: 30px;
 }
 
 .footer__icon-wrapper {
@@ -1519,6 +1520,32 @@ template {
   color: #BDBDBD;
 }
 
+.footer__bottom {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2 / 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__bank-card {
+  width: 136px;
+}
+
+.politics__link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1538,6 +1565,10 @@ template {
   .packages-wrapper {
     -ms-grid-columns: (300px)[auto-fill];
         grid-template-columns: repeat(auto-fill, 300px);
+  }
+  .footer__input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 
@@ -1615,6 +1646,56 @@ template {
   .packages-card--active {
     max-width: 100%;
   }
+  .footer-wrapper {
+    -ms-grid-columns: 2fr 2fr 2fr 3fr 2fr 2fr;
+        grid-template-columns: 2fr 2fr 2fr 3fr 2fr 2fr;
+    grid-row-gap: 40px;
+  }
+  .footer__logo {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    grid-column: span 2;
+  }
+  .footer__social-network {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    grid-column: span 4;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .footer__categories {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    grid-column: span 2;
+  }
+  .footer__legal {
+    grid-column: span 2;
+  }
+  .footer__additional {
+    grid-column: span 2;
+  }
+  .footer__input {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
+  }
+  .footer__contact-details {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    grid-column: span 5;
+  }
+  .footer__contact-form {
+    -ms-grid-row: 4;
+    grid-row: 4;
+    grid-column: span 5;
+  }
+  .footer__bottom {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 7;
+    grid-column: 1 / 8;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1636,6 +1717,24 @@ template {
   }
   .activities-card {
     width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .packages-wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .packages-card {
+    max-width: 100%;
+  }
+  .packages-card--active {
+    grid-auto-flow: column;
+    -ms-grid-rows: 250px 1fr;
+        grid-template-rows: 250px 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-column: span 1;
   }
 }
 
@@ -1744,23 +1843,9 @@ template {
     font-size: 24px;
     line-height: 23px;
   }
-}
-
-@media (max-width: 700px) {
-  .packages-wrapper {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .packages-card {
-    max-width: 100%;
-  }
-  .packages-card--active {
-    grid-auto-flow: column;
-    -ms-grid-rows: 250px 1fr;
-        grid-template-rows: 250px 1fr;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    grid-column: span 1;
+  .footer__input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 
@@ -1806,6 +1891,70 @@ template {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 / 3;
+  }
+  .footer-wrapper {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    grid-column-gap: 0px;
+  }
+  .footer__logo {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .footer__social-network {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .footer__additional {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .footer__categories {
+    -ms-grid-row: 4;
+    grid-row: 4;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .footer__legal {
+    -ms-grid-row: 5;
+    grid-row: 5;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .footer__contact-details {
+    -ms-grid-row: 6;
+    grid-row: 6;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .footer__contact-form {
+    -ms-grid-row: 7;
+    grid-row: 7;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .footer__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__bottom__bank-card {
+    width: 100%;
+  }
+  .politics {
+    margin-bottom: 10px;
+  }
+  .politics__link {
+    margin-right: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */
