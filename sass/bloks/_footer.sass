@@ -9,7 +9,7 @@
     grid-auto-rows: minmax(40px, min-content)
     align-items: start
   &__logo
-    width: 166px
+    width: 150px
     grid-row: 1 / 3
     align-self: center
 
@@ -32,6 +32,7 @@
       grid-column-start: span 2
     &-form
       grid-column: span 2
+      margin-bottom: 85px
   &__form
     display: flex
     align-items: start
@@ -76,6 +77,14 @@
   &__link
     text-decoration: none
     color: inherit
+  &__tel
+    text-decoration: none
+    color: inherit
+    display: inline-block
+  &__mail
+    text-decoration: none
+    color: inherit
+    display: inline-block
   &__input
     background-color: $light
     border-radius: 4px
@@ -85,6 +94,9 @@
     margin-bottom: 15px
     flex-basis: 48%
     color: $gray
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
   &__message
     background-color: $light
     border-radius: 4px
@@ -95,24 +107,35 @@
     resize: none
     margin-bottom: 23px
     color: $gray
+    font-size: 12px
+    line-height: 15px
   &__button
     min-width: 160px
     min-height: 50px
     padding: 17px
+    font-size: 12px
+    line-height: 15px
   &__info
     font-style: normal
     font-weight: bold
     font-size: 12px
     line-height: 15px
     color: $gray
+
   &__bottom
     grid-column: 2 / 6
     display: flex
     justify-content: space-between
   &__bank-card
     width: 136px
-
+.form
+  &-wrapper
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
 .politics
+  margin-left: 126px
   &__link
     font-style: normal
     font-weight: normal

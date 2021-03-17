@@ -115,6 +115,16 @@
   .activities
     &-card
       width: 100%
+  .footer
+    &__logo
+      width: 98px
+    &__bottom
+      display: flex
+      grid-column: span 6
+      justify-content: space-between
+  .politics
+    margin-left: 0
+    min-width: 238px
 @media (max-width: 700px)
   .packages
     &-wrapper
@@ -246,6 +256,14 @@
       &-network
         grid-row: 2
         grid-column: 1
+        display: flex
+        flex-wrap: wrap
+      &-links
+        max-width: 86px
+    &__title
+      &--inline
+        flex-basis: 100%
+        margin-bottom: 20px
     &__additional
       grid-row: 3
       grid-column: 1
@@ -262,11 +280,19 @@
       &-form
         grid-row: 7
         grid-column: 1
+        margin-bottom: 30px
+    &__info
+      margin-bottom: 15px
     &__bottom
       flex-direction: column
       flex-wrap: wrap
+      grid-row: 8
       &__bank-card
         width: 100%
+  .form
+    &-wrapper
+      flex-direction: column-reverse
+      align-items: start
   .politics
     margin-bottom: 10px
     &__link

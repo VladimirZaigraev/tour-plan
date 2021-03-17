@@ -1249,7 +1249,7 @@ template {
 }
 
 .activities {
-  padding: 60px 0 98px 0;
+  padding: 60px 0 78px 0;
 }
 
 .activities__title {
@@ -1358,7 +1358,7 @@ template {
 }
 
 .footer__logo {
-  width: 166px;
+  width: 150px;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1 / 3;
@@ -1406,6 +1406,7 @@ template {
 
 .footer__contact-form {
   grid-column: span 2;
+  margin-bottom: 85px;
 }
 
 .footer__form {
@@ -1482,6 +1483,18 @@ template {
   color: inherit;
 }
 
+.footer__tel {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.footer__mail {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
 .footer__input {
   background-color: #ffffff;
   border-radius: 4px;
@@ -1492,6 +1505,9 @@ template {
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
   color: #BDBDBD;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .footer__message {
@@ -1504,12 +1520,16 @@ template {
   resize: none;
   margin-bottom: 23px;
   color: #BDBDBD;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .footer__button {
   min-width: 160px;
   min-height: 50px;
   padding: 17px;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .footer__info {
@@ -1534,6 +1554,23 @@ template {
 
 .footer__bank-card {
   width: 136px;
+}
+
+.form-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.politics {
+  margin-left: 126px;
 }
 
 .politics__link {
@@ -1717,6 +1754,22 @@ template {
   }
   .activities-card {
     width: 100%;
+  }
+  .footer__logo {
+    width: 98px;
+  }
+  .footer__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    grid-column: span 6;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .politics {
+    margin-left: 0;
+    min-width: 238px;
   }
 }
 
@@ -1908,6 +1961,19 @@ template {
     grid-row: 2;
     -ms-grid-column: 1;
     grid-column: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__social-links {
+    max-width: 86px;
+  }
+  .footer__title--inline {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 20px;
   }
   .footer__additional {
     -ms-grid-row: 3;
@@ -1938,6 +2004,10 @@ template {
     grid-row: 7;
     -ms-grid-column: 1;
     grid-column: 1;
+    margin-bottom: 30px;
+  }
+  .footer__info {
+    margin-bottom: 15px;
   }
   .footer__bottom {
     -webkit-box-orient: vertical;
@@ -1946,9 +2016,20 @@ template {
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-grid-row: 8;
+    grid-row: 8;
   }
   .footer__bottom__bank-card {
     width: 100%;
+  }
+  .form-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
   .politics {
     margin-bottom: 10px;
