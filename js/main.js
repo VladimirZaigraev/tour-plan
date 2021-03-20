@@ -1,3 +1,10 @@
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function () {
+  document
+    .querySelector(".navbar-bottom")
+    .classList.toggle("navbar-bottom--visible");
+});
+
 const hotelSlider = new Swiper(".hotel-slider", {
   // Optional parameters
 
@@ -14,6 +21,7 @@ const hotelSlider = new Swiper(".hotel-slider", {
     onlyInViewport: false,
   },
 });
+
 //подключение карты
 type = "text/javascript";
 ymaps.ready(init);
@@ -39,8 +47,3 @@ const reviewsSlider = new Swiper(".reviews-slider", {
     onlyInViewport: false,
   },
 });
-//$(".newsletter").parallax({
-//imageSrc: "img/newsletter-bg.jpg",
-//naturalWidth: "2880px",
-//naturalHeight: "1913px",
-//});
