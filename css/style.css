@@ -1627,6 +1627,7 @@ template {
   max-width: 400px;
 }
 
+<<<<<<< HEAD
 .modal__overlay {
   position: fixed;
   left: 0;
@@ -1715,6 +1716,8 @@ template {
   color: #BDBDBD;
 }
 
+=======
+>>>>>>> d19530df272030041699e2aad7d7ece3f4009e13
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
