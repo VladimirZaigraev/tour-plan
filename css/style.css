@@ -41,22 +41,54 @@ button:focus {
   border: none;
   padding: 0 23px;
   height: 50px;
-  color: #BDBDBD;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+  color: #333333;
+}
+
+.input ::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.input :-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.input ::-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.input ::placeholder {
+  color: #BDBDBD;
 }
 
 .message {
   resize: none;
   margin-bottom: 23px;
-  color: #BDBDBD;
+  color: #333333;
   font-size: 12px;
   line-height: 15px;
   background-color: #ffffff;
   border-radius: 4px;
   padding: 18px 23px;
   border: none;
+}
+
+.message ::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.message :-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.message ::-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.message ::placeholder {
+  color: #BDBDBD;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -492,7 +524,6 @@ template {
   border: none;
   font-size: 12px;
   line-height: 15px;
-  color: #333333;
 }
 
 .search__button {
@@ -1627,7 +1658,17 @@ template {
   max-width: 400px;
 }
 
-<<<<<<< HEAD
+.success__button {
+  font-family: Nunito;
+  min-width: 160px;
+  min-height: 50px;
+  padding: 17px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 50px;
+}
+
 .modal__overlay {
   position: fixed;
   left: 0;
@@ -1635,7 +1676,7 @@ template {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 143, 223, 0.39);
-  z-index: 100;
+  z-index: 1000;
   visibility: hidden;
   opasity: 0;
   -webkit-transition: opacity 0.2s;
@@ -1658,7 +1699,7 @@ template {
   background-color: #0A223D;
   color: #ffffff;
   border-radius: 8px;
-  z-index: 101;
+  z-index: 1001;
   visibility: hidden;
   opasity: 0;
   -webkit-transition: opacity 0.2s;
@@ -1716,8 +1757,6 @@ template {
   color: #BDBDBD;
 }
 
-=======
->>>>>>> d19530df272030041699e2aad7d7ece3f4009e13
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
