@@ -2320,5 +2320,9 @@ template {
   .navbar-bottom {
     overflow: auto;
   }
+  .modal__dialog {
+    height: 95vh;
+    overflow: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */
