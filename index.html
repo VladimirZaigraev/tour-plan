@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -228,7 +229,12 @@
           <!-- /.swiper-container-->
 
           <div class="hotel-right">
-            <div class="booking">
+            <div
+              class="booking"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1500"
+            >
               <div class="booking__info">
                 <div class="booking__price">
                   <span class="booking__start">price starts as</span>
@@ -291,9 +297,15 @@
     <!-- /.hotel -->
     <section class="packages">
       <div class="container">
-        <h2 class="packages__title">Other Packages</h2>
+        <h2 class="packages__title" data-aos="fade-up" data-aos-duration="1500">
+          Other Packages
+        </h2>
         <div class="packages-wrapper">
-          <div class="packages__card packages-card packages-card--active">
+          <div
+            class="packages__card packages-card packages-card--active"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <div class="packages-card__image card-image">
               <span class="card-image__offer card-image__offer--active"
                 >Flash Offer</span
@@ -360,7 +372,11 @@
             <!-- /.packages-card__info -->
           </div>
           <!-- /.packages__card packages-card -->
-          <div class="packages__card packages-card">
+          <div
+            class="packages__card packages-card"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <div class="packages-card__image card-image">
               <span class="card-image__offer">Flash Offer</span>
               <img
@@ -425,7 +441,11 @@
             <!-- /.packages-card__info -->
           </div>
           <!-- /.packages__card packages-card -->
-          <div class="packages__card packages-card">
+          <div
+            class="packages__card packages-card"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <div class="packages-card__image card-image">
               <span class="card-image__offer">Flash Offer</span>
               <img
@@ -490,7 +510,11 @@
             <!-- /.packages-card__info -->
           </div>
           <!-- /.packages__card packages-card -->
-          <div class="packages__card packages-card">
+          <div
+            class="packages__card packages-card"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <div class="packages-card__image card-image">
               <span class="card-image__offer">Flash Offer</span>
               <img
@@ -555,7 +579,11 @@
             <!-- /.packages-card__info -->
           </div>
           <!-- /.packages__card packages-card -->
-          <div class="packages__card packages-card">
+          <div
+            class="packages__card packages-card"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <div class="packages-card__image card-image">
               <span class="card-image__offer">Flash Offer</span>
               <img
@@ -660,12 +688,19 @@
     <!-- /.newsletter -->
     <section class="reviews">
       <div class="container">
-        <h2 class="reviews__title">What people think about us</h2>
+        <h2 class="reviews__title" data-aos="fade-up" data-aos-duration="1500">
+          What people think about us
+        </h2>
 
         <div class="swiper-container reviews-slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="reviews-slider__item">
+              <div
+                class="reviews-slider__item"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1500"
+              >
                 <div class="reviews-slider__profile">
                   <img
                     src="img/reviews_avatar.jpg"
@@ -844,9 +879,19 @@
     <!-- /.reviews -->
     <section class="activities">
       <div class="container">
-        <h3 class="activities__title">Other Activities</h3>
+        <h3
+          class="activities__title"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
+          Other Activities
+        </h3>
         <div class="activities-wrapper">
-          <div class="activities-card">
+          <div
+            class="activities-card"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <img
               src="img/card-1.jpg"
               alt="The curious corner
@@ -860,7 +905,11 @@
             <button class="button activities-card__button">Book Now</button>
           </div>
           <!-- /.activities-card -->
-          <div class="activities-card">
+          <div
+            class="activities-card"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <img
               src="img/card-2.jpg"
               alt="Gymkhana club golf 
@@ -874,7 +923,11 @@
             <button class="button activities-card__button">Book Now</button>
           </div>
           <!-- /.activities-card -->
-          <div class="activities-card">
+          <div
+            class="activities-card"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <img
               src="img/card-3.jpg"
               alt="Tamarind falls hiking
@@ -888,7 +941,11 @@
             <button class="button activities-card__button">Book Now</button>
           </div>
           <!-- /.activities-card -->
-          <div class="activities-card">
+          <div
+            class="activities-card"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <img
               src="img/card-4.jpg"
               alt="The blue marine discovery 
@@ -1189,6 +1246,7 @@
     <script src="https://api-maps.yandex.ru/2.1/?apikey=601647fd-ee95-43e0-b798-397a50750529&lang=ru_RU"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
