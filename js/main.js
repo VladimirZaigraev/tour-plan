@@ -92,12 +92,13 @@ $(document).ready(function () {
           required: "We need your email address to contact you",
           email: "Your email address must be in the format of name@domain.com",
         },
-        tel: {
+        phone: {
           required: "We need a phone to contact you",
+          minlength: "Phone must be 11 digits long",
         },
       },
     });
   });
   //Маска на телефон
-  $(".phone").mask("0 (000) 000-00-00");
+  $(".phone").mask("+7 (000) 000-00-00");
 });
