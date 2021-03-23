@@ -79,4 +79,25 @@ $(document).ready(function () {
     },
     false
   );
+  //Валидация форм
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "Name must be at least 2 characters",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        tel: {
+          required: "We need a phone to contact you",
+        },
+      },
+    });
+  });
+  //Маска на телефон
+  $(".phone").mask("0 (000) 000-00-00");
 });

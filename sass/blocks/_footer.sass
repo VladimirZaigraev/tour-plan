@@ -39,6 +39,7 @@
     justify-content: space-between
     flex-wrap: wrap
     align-items: center
+    color: $light
   &__ul
     padding: 0
     margin: 0
@@ -76,18 +77,20 @@
     margin-bottom: 22px
   &__link
     text-decoration: none
-    color: inherit
+    color: $gray
   &__tel
     text-decoration: none
-    color: inherit
+    color: $gray
     display: inline-block
   &__mail
     text-decoration: none
-    color: inherit
+    color: $gray
     display: inline-block
   &__input
-    margin-bottom: 15px
-    flex-basis: 48%
+    width: 100%
+    &-group
+      margin-bottom: 15px
+      flex-basis: 48%
 
   &__message
     width: 100%
