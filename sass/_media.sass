@@ -17,6 +17,21 @@
   .footer
     &__input
       flex-basis: 100%
+    &__categories
+      margin-left: 0px
+    &__additional
+      margin-left: 0px
+    &__social
+      &-network
+        margin-left: 0px
+    &__legal
+      margin-left: 30px
+    &__contact
+      &-details
+        margin-bottom: 0px
+    &__contact
+      &-form
+        margin-left: 0px
 @media ( max-width:  992px )
   .container, .newsletter-wrapper
     max-width: 700px
@@ -48,10 +63,7 @@
     width: 340px
   .map
     width: 340px
-  .newsletter
-    &-wrapper
-      flex-direction: column
-      align-items: flex-start
+
   .reviews
     &-slider
       &__item
@@ -70,7 +82,7 @@
         max-width: 100%
   .footer
     &-wrapper
-      grid-template-columns: 2fr 2fr 2fr 3fr 2fr 2fr
+      grid-template-columns: 1fr 2fr 2fr 3fr 2fr 2fr
       grid-row-gap: 40px
     &__logo
       grid-row: 1 / 2
@@ -105,26 +117,76 @@
   .container, .newsletter-wrapper
     max-width: 700px
     width: 92%
+  .navbar
+    &-menu
+      padding-top: 20px
+      padding-bottom: 22px
+      padding-left: 18px
+      padding-right: 18px
+    &__search
+      margin-right: 73px
+
   .booking
     width: 48%
-  .map
-    width: 48%
-    .reviews
+
+  .packages
+    &__title
+      font-size: 30px
+      line-height: 38px
+  .reviews
+    padding-bottom: 60px
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 50px
     &-slider
       &__item
         max-width: 580px
+        padding-left: 60px
+        padding-right: 60px
+        padding-bottom: 30px
       &__text
-        max-width: 80%
+        max-width: 100%
+      &__button
+        &--next
+          right: 0
+        &--prev
+          left: 0
+  .newsletter
+    &__subscribe
+      margin-bottom: 10px
   .activities
-    &-card
-      width: 100%
+    padding-bottom: 50px
   .footer
+    padding-top: 70px
     &__logo
       width: 98px
     &__bottom
       display: flex
       grid-column: span 6
       justify-content: space-between
+    &__bank
+    &-card
+      width: 136px
+    &__categories
+      margin-left: 0px
+    &__additional
+      margin-left: 20px
+    &__social
+      &-network
+        margin-left: 6px
+    &__legal
+      margin-left: 30px
+    &__contact
+      &-details
+        margin-top: 20px
+        margin-bottom: 0px
+    &__contact
+      &-form
+        margin-left: 0px
+        grid-column: span 6
+        margin-right: 23%
+        margin-bottom: 20px
   .politics
     margin-left: 0
     min-width: 238px
@@ -136,6 +198,16 @@
       width: 100%
     &__info
       margin-bottom: 15px
+@media ( max-width: 740px)
+  .navbar
+    &__search
+      margin-right: 45px
+  .search
+    &__input
+      max-width: 300px
+  .activities
+    &-card
+      width: 100%
 
 @media (max-width: 700px)
   .packages
@@ -148,6 +220,11 @@
         grid-template-rows: 250px 1fr
         grid-template-columns: 1fr
         grid-column: span 1
+  .newsletter
+    &-wrapper
+      flex-direction: column
+      align-items: flex-start
+
 @media ( max-width: 649px )
   .container
   body
@@ -166,7 +243,9 @@
           display: none
         &--visible
           display: flex
-
+    .navbar
+    &__search
+      margin: auto
     &__user
       flex-direction: column
       justify-content: center
@@ -246,6 +325,10 @@
     width: 100%
   .map
     width: 100%
+  .packages
+    &__title
+      font-size: 24px
+      line-height: 23px
   .reviews
     &-slider
       &__item
@@ -286,7 +369,8 @@
         width: 100%
         height: 100%
   .newsletter
-    padding: 76px 0px 83px 0px
+    &__mask
+      padding: 76px 0px 83px 0px
     &__title
       margin-bottom: 37px
   .subscribe
@@ -310,6 +394,7 @@
       &__button
         width: 100%
         grid-column: 1 / 3
+
   .footer
     &-wrapper
       grid-template-columns: auto
@@ -345,6 +430,7 @@
       &-form
         grid-row: 7
         grid-column: 1
+        margin-right: 0px
         margin-bottom: 30px
     &__info
       margin-bottom: 15px
@@ -362,6 +448,25 @@
     margin-bottom: 10px
     &__link
       margin-right: 5px
+@media ( max-width: 574px )
+  .footer
+    &__categories
+      margin-left: 0px
+    &__additional
+      margin-left: 0px
+    &__social
+      &-network
+        margin-left: 0px
+    &__legal
+      margin-left: 0px
+    &__contact
+      &-details
+        margin-top: 20px
+        margin-bottom: 0px
+    &__contact
+      &-form
+        margin-left: 0px
+
 @media ( max-width: 450px )
   .navbar
     &__search
@@ -381,16 +486,119 @@
         line-height: 30px
 
 @media ( max-width: 320px )
+  body
+    padding-top: 70px
   .container
     max-width: 280px
   .navbar
+    &-top
+      padding-top: 18px
+      padding-bottom: 28px
     &-menu
       padding-top: 31px
       &__link
+  .hotel
+    &-info
+      padding-bottom: 40px
+    &-slider
+      margin-bottom: 20px
+      &__button
+        display: none
+    &-right
+      min-height: 402px
+  .swiper
+    &-container
+      height: 179px
+  .booking
+    padding: 30px 22px 26px 22px
+  .map
+    height: 173px
+  .packages
+    &__title
+      font-size: 18px
+      line-height: 23px
+  .stars
+    display: none
+  .packages
+    &-card
+      &__description
+        display: none
+  .newsletter
+    &__mask
+      padding-bottom: 78px
+    &-wrapper
+      width: 85%
+    &-title
+      font-size: 20px
+      line-height: 25px
+      margin-bottom: 42px
+      &__strong
+        font-size: 30px
+        line-height: 38px
+  .reviews
+    &__title
+      margin-left: auto
+      margin-right: auto
+      max-width: 245px
+    &-slider
+      &__item
+      &__button
+        &--next
+          margin-right: -90px
+        &--prev
+          margin-left: -90px
 
-    &__search
+    .swiper-container
+      height: 100%
+  .activities
+    padding-top: 30px
+    &-card
+      max-width: 281px
+  .footer
+    padding-top: 68px
+    &-wrapper
+      grid-template-columns: 1fr
+      grid-row-gap: 30px
+    &__categories
+      margin-left: 0px
+      grid-row: 5 / 6
+    &__additional
+      margin-left: 0px
+      grid-row: 4 / 5
+    &__social
+      &-network
+        margin-left: 0px
+    &__legal
+      margin-left: 0px
+      grid-row: 3 / 4
+    &__contact
+      &-details
+        margin-top: 0px
+        margin-bottom: 10px
+    &__contact
+      &-form
+        margin-bottom: 0px
+        margin-left: 0px
+    &__item--mb-2
+      margin-bottom: 20px
+    &__item
+      justify-content: flex-start
+    &__icon
+      &-wrapper
+        min-width: 30px
+    &__title--mb-3
+      margin-bottom: 24px
+    &__message
+      margin-bottom: 10px
+    &__info
+      margin-bottom: 10px
+  .politics
+    width: 100%
+    font-size: 12px
+    line-height: 15px
 @media ( max-height: 500px )
   .navbar
+
     &-bottom
       overflow: auto
   .modal

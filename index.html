@@ -4,17 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
-
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -36,9 +35,10 @@
             <input
               type="text"
               class="input search__input"
-              placeholder="Search Location |"
+              placeholder="Search Location"
+              autofocus
             />
-            <button class="search__button">
+            <button class="search__button hover">
               <img
                 src="img/search.svg"
                 alt="Icon: Search"
@@ -46,8 +46,7 @@
               />
             </button>
           </form>
-
-          <a class="user navbar__user navbar__user--mobile--hidden">
+          <a href="# " class="user navbar__user navbar__user--mobile--hidden">
             <img
               src="img/user_avatar.jpg"
               alt="Avatar: Nathan"
@@ -91,7 +90,7 @@
                     class="input search__input"
                     placeholder="Search Location"
                   />
-                  <button class="search__button">
+                  <button class="search__button hover">
                     <img
                       src="img/search.svg"
                       alt="Icon: Search"
@@ -229,12 +228,7 @@
           <!-- /.swiper-container-->
 
           <div class="hotel-right">
-            <div
-              class="booking"
-              data-aos="flip-left"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="1500"
-            >
+            <div class="booking">
               <div class="booking__info">
                 <div class="booking__price">
                   <span class="booking__start">price starts as</span>
@@ -271,20 +265,20 @@
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <button data-toggle="modal" class="button booking__button">
+              <button data-toggle="modal" class="button booking__button hover">
                 View Other Options
               </button>
             </div>
             <!-- /.booking -->
             <div class="map" id="map">
-              <!--<iframe
+              <iframe
+                nonce="base64value"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.576251230949!2d100.8804122143534!3d12.934934519182613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310296059bd3779b%3A0x37191e723a1a258!2sHilton%20Pattaya!5e0!3m2!1sru!2sru!4v1615312153743!5m2!1sru!2sru"
-                width="100%"
-                height="100%"
                 style="border-radius: 4px; border: none"
                 allowfullscreen=""
                 loading="lazy"
-              ></iframe>-->
+                class="map"
+              ></iframe>
             </div>
             <!-- /.map -->
           </div>
@@ -297,15 +291,9 @@
     <!-- /.hotel -->
     <section class="packages">
       <div class="container">
-        <h2 class="packages__title" data-aos="fade-up" data-aos-duration="1500">
-          Other Packages
-        </h2>
+        <h2 class="packages__title">Other Packages</h2>
         <div class="packages-wrapper">
-          <div
-            class="packages__card packages-card packages-card--active"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-          >
+          <div class="packages__card packages-card packages-card--active">
             <div class="packages-card__image card-image">
               <span class="card-image__offer card-image__offer--active"
                 >Flash Offer</span
@@ -367,16 +355,17 @@
                 <span class="card-price card-price--sale">$ 8,500</span>
               </div>
               <!-- /.packages-card__price -->
-              <button class="button packages-card__button">Book Now</button>
+              <button
+                data-toggle="modal"
+                class="button packages-card__button hover"
+              >
+                Book Now
+              </button>
             </div>
             <!-- /.packages-card__info -->
           </div>
           <!-- /.packages__card packages-card -->
-          <div
-            class="packages__card packages-card"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-          >
+          <div class="packages__card packages-card">
             <div class="packages-card__image card-image">
               <span class="card-image__offer">Flash Offer</span>
               <img
@@ -436,16 +425,17 @@
                 <span class="card-price card-price--sale">$ 3,000</span>
               </div>
               <!-- /.packages-card__price -->
-              <button class="button packages-card__button">Book Now</button>
+              <button
+                data-toggle="modal"
+                class="button packages-card__button hover"
+              >
+                Book Now
+              </button>
             </div>
             <!-- /.packages-card__info -->
           </div>
           <!-- /.packages__card packages-card -->
-          <div
-            class="packages__card packages-card"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-          >
+          <div class="packages__card packages-card">
             <div class="packages-card__image card-image">
               <span class="card-image__offer">Flash Offer</span>
               <img
@@ -505,16 +495,17 @@
                 <span class="card-price card-price--sale">$ 9,500</span>
               </div>
               <!-- /.packages-card__price -->
-              <button class="button packages-card__button">Book Now</button>
+              <button
+                data-toggle="modal"
+                class="button packages-card__button hover"
+              >
+                Book Now
+              </button>
             </div>
             <!-- /.packages-card__info -->
           </div>
           <!-- /.packages__card packages-card -->
-          <div
-            class="packages__card packages-card"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-          >
+          <div class="packages__card packages-card">
             <div class="packages-card__image card-image">
               <span class="card-image__offer">Flash Offer</span>
               <img
@@ -574,16 +565,17 @@
                 <span class="card-price card-price--sale">$ 2,500</span>
               </div>
               <!-- /.packages-card__price -->
-              <button class="button packages-card__button">Book Now</button>
+              <button
+                data-toggle="modal"
+                class="button packages-card__button hover"
+              >
+                Book Now
+              </button>
             </div>
             <!-- /.packages-card__info -->
           </div>
           <!-- /.packages__card packages-card -->
-          <div
-            class="packages__card packages-card"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-          >
+          <div class="packages__card packages-card">
             <div class="packages-card__image card-image">
               <span class="card-image__offer">Flash Offer</span>
               <img
@@ -643,7 +635,12 @@
                 <span class="card-price card-price--sale">$ 3,500</span>
               </div>
               <!-- /.packages-card__price -->
-              <button class="button packages-card__button">Book Now</button>
+              <button
+                data-toggle="modal"
+                class="button packages-card__button hover"
+              >
+                Book Now
+              </button>
             </div>
             <!-- /.packages-card__info -->
           </div>
@@ -662,45 +659,41 @@
       data-natural-width="2880"
       data-natural-height="1913"
     >
-      <div class="newsletter-wrapper">
-        <h2 class="newsletter-title newsletter__title">
-          subscribe to our
-          <span class="newsletter-title__strong">Newsletter</span>
-        </h2>
+      <div class="newsletter__mask">
+        <div class="newsletter-wrapper">
+          <h2 class="newsletter-title newsletter__title">
+            subscribe to our
+            <span class="newsletter-title__strong">Newsletter</span>
+          </h2>
 
-        <form
-          action="send.php"
-          method="POST"
-          class="subscribe newsletter__subscribe form"
-        >
-          <input
-            type="email"
-            class="input subscribe__input"
-            placeholder="Your email address"
-            name="email"
-            required
-          />
-          <button class="subscribe__button">Send</button>
-        </form>
+          <form
+            action="send.php"
+            method="POST"
+            class="subscribe newsletter__subscribe form"
+          >
+            <input
+              type="email"
+              class="input subscribe__input"
+              placeholder="Your email address"
+              name="email"
+              required
+            />
+            <button class="subscribe__button hover">Send</button>
+          </form>
+        </div>
+        <!-- /.newsletter-wrapper -->
       </div>
-      <!-- /.newsletter-wrapper -->
+      <!-- /.newsletter__mask -->
     </section>
     <!-- /.newsletter -->
     <section class="reviews">
       <div class="container">
-        <h2 class="reviews__title" data-aos="fade-up" data-aos-duration="1500">
-          What people think about us
-        </h2>
+        <h2 class="reviews__title">What people think about us</h2>
 
         <div class="swiper-container reviews-slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div
-                class="reviews-slider__item"
-                data-aos="flip-left"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="1500"
-              >
+              <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
                   <img
                     src="img/reviews_avatar.jpg"
@@ -879,19 +872,9 @@
     <!-- /.reviews -->
     <section class="activities">
       <div class="container">
-        <h3
-          class="activities__title"
-          data-aos="fade-right"
-          data-aos-duration="1500"
-        >
-          Other Activities
-        </h3>
+        <h3 class="activities__title">Other Activities</h3>
         <div class="activities-wrapper">
-          <div
-            class="activities-card"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-          >
+          <div class="activities-card">
             <img
               src="img/card-1.jpg"
               alt="The curious corner
@@ -902,14 +885,15 @@
               The curious corner <br />
               of chamarel
             </h4>
-            <button class="button activities-card__button">Book Now</button>
+            <button
+              data-toggle="modal"
+              class="button activities-card__button hover"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.activities-card -->
-          <div
-            class="activities-card"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-          >
+          <div class="activities-card">
             <img
               src="img/card-2.jpg"
               alt="Gymkhana club golf 
@@ -920,14 +904,15 @@
               Gymkhana club golf <br />
               course
             </h4>
-            <button class="button activities-card__button">Book Now</button>
+            <button
+              data-toggle="modal"
+              class="button activities-card__button hover"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.activities-card -->
-          <div
-            class="activities-card"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-          >
+          <div class="activities-card">
             <img
               src="img/card-3.jpg"
               alt="Tamarind falls hiking
@@ -938,14 +923,15 @@
               Tamarind falls hiking <br />
               trip - full day
             </h4>
-            <button class="button activities-card__button">Book Now</button>
+            <button
+              data-toggle="modal"
+              class="button activities-card__button hover"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.activities-card -->
-          <div
-            class="activities-card"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-          >
+          <div class="activities-card">
             <img
               src="img/card-4.jpg"
               alt="The blue marine discovery 
@@ -956,7 +942,12 @@
               The blue marine discovery <br />
               quest
             </h4>
-            <button class="button activities-card__button">Book Now</button>
+            <button
+              data-toggle="modal"
+              class="button activities-card__button hover"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.activities-card -->
         </div>
@@ -1033,15 +1024,15 @@
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="#" class="footer__link"
+              <a href="https://facebook.com/" class="footer__link"
                 ><img src="img/facebook.svg" alt="icon: facebook"
               /></a>
               <!-- /.footer__link -->
-              <a href="#" class="footer__link"
+              <a href="https://www.youtube.com/" class="footer__link"
                 ><img src="img/youtube.svg" alt="icon: youtube"
               /></a>
               <!-- /.footer__link -->
-              <a href="#" class="footer__link"
+              <a href="https://www.instagram.com/" class="footer__link"
                 ><img src="img/instagram.svg" alt=""
               /></a>
               <!-- /.footer__link -->
@@ -1165,7 +1156,7 @@
                 name="message"
               ></textarea>
               <div class="form-wrapper">
-                <button class="button footer__button" type="submit">
+                <button class="button footer__button hover" type="submit">
                   Send
                 </button>
                 <span class="footer__info">* Required Fields</span>
@@ -1215,7 +1206,7 @@
             name="phone"
             required
             minlength="18"
-            id="phone"
+            id="phone2"
           />
 
           <input
@@ -1231,7 +1222,9 @@
             name="message"
           ></textarea>
           <div class="form-wrapper modal__wrapper">
-            <button class="button modal__button" type="submit">Send</button>
+            <button class="button modal__button hover" type="submit">
+              Send
+            </button>
             <span class="modal__info">* Required Fields</span>
           </div>
         </form>
@@ -1242,11 +1235,8 @@
     <!-- /.modal -->
 
     <script src="js/jquery-3.6.0.min.js"></script>
-
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=601647fd-ee95-43e0-b798-397a50750529&lang=ru_RU"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/aos.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>

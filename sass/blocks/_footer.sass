@@ -2,10 +2,13 @@
   background-color: $dark
   padding-top: 108px
   padding-bottom: 46px
+  padding-left: 0
+  padding-right: 0
   &-wrapper
     display: grid
+    width: 100%
     grid-template-columns: repeat(4, minmax(min-content, 1fr))
-    grid-gap: 20px
+    row-gap: 20px
     grid-auto-rows: minmax(40px, min-content)
     align-items: start
   &__logo
@@ -63,7 +66,7 @@
     font-style: normal
     font-weight: normal
     font-size: 14px
-    line-height: 160%
+    line-height: 23px
     color: $gray
     &--mb-2
       margin-bottom: 20px
@@ -113,13 +116,29 @@
     font-size: 12px
     line-height: 15px
     color: $gray
-
   &__bottom
     grid-column: 2 / 6
     display: flex
     justify-content: space-between
-  &__bank-card
-    width: 136px
+  &__bank
+    &-card
+      width: 136px
+  &__categories
+    margin-left: 4px
+  &__additional
+    margin-left: 12px
+  &__social
+    &-network
+      margin-left: 12px
+  &__legal
+    margin-left: 80px
+  &__contact
+    &-details
+      margin-bottom: 5px
+  &__contact
+    &-form
+      margin-left: 10px
+
 .form
   &-wrapper
     width: 100%
@@ -127,6 +146,7 @@
     justify-content: space-between
     align-items: center
 .politics
+  padding-top: 4px
   margin-left: 126px
   &__link
     font-style: normal

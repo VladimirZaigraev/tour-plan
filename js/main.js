@@ -22,17 +22,6 @@ $(document).ready(function () {
       onlyInViewport: false,
     },
   });
-
-  //подключение карты
-  type = "text/javascript";
-  ymaps.ready(init);
-  function init() {
-    var myMap = new ymaps.Map("map", {
-      center: [12.93434771, 100.88389939],
-
-      zoom: 16,
-    });
-  }
   const reviewsSlider = new Swiper(".reviews-slider", {
     // Optional parameters
 
@@ -101,6 +90,4 @@ $(document).ready(function () {
   });
   //Маска на телефон
   $(".phone").mask("+7 (000) 000-00-00");
-  //Инициализация aos
-  AOS.init();
 });

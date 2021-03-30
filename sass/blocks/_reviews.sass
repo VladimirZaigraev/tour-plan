@@ -40,7 +40,7 @@
         height: 47px
     &__button
       position: absolute
-      top: 50%
+      top: 48%
       transform: translateY(-50%)
       width: 30px
       height: 30px
@@ -52,10 +52,10 @@
       cursor: pointer
       z-index: 99
       &--next
-        right: 0
+        right: 23px
         background-image: url(../img/chevron-right.svg)
       &--prev
-        left: 0
+        left: 23px
         background-image: url(../img/chevron-left.svg)
     &__profile
       display: flex
@@ -81,7 +81,6 @@
       font-size: 10px
       line-height: 13px
       color: #000000
-      margin-bottom: 4px
     &-rating
       &__stars
         width: 6px
@@ -89,8 +88,13 @@
     &__text
       max-width: 537px
       max-height: 266px
+      margin-top: 20px
       font-weight: normal
       font-size: 12px
       line-height: 160%
       text-align: justify
       overflow: auto
+  .slider
+    &-rating
+      display: block
+      //width: 48px
