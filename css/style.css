@@ -31,6 +31,10 @@ button:focus {
   background-color: #C10025;
 }
 
+a:hover {
+  color: #EC1F46;
+}
+
 .button {
   background-color: #EC1F46;
   border: none;
@@ -980,8 +984,12 @@ template {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-  padding: 30px 21px 25px 30px;
-  row-gap: 25px;
+  padding: 30px 21px 25px 33px;
+  row-gap: 4px;
+}
+
+.packages-card__info--active {
+  padding: 46px 21px 30px 45px;
 }
 
 .packages-card__header {
@@ -1038,7 +1046,7 @@ template {
 
 .card-image__offer {
   position: absolute;
-  top: 30px;
+  top: 26px;
   left: 0;
   font-weight: 600;
   font-size: 8px;
@@ -1053,7 +1061,7 @@ template {
   font-weight: 600;
   font-size: 12px;
   line-height: 15px;
-  padding: 8px 12px;
+  padding: 8px 22px 8px 12px;
 }
 
 .card-image__img {
@@ -1097,6 +1105,7 @@ template {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
+  margin-bottom: 10px;
 }
 
 .newsletter__mask {
@@ -1674,6 +1683,7 @@ template {
 .politics {
   padding-top: 4px;
   margin-left: 126px;
+  color: #ffffff;
 }
 
 .politics__link {
@@ -1766,6 +1776,8 @@ template {
   opasity: 0;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
+  max-height: 490px;
+  overflow: auto;
 }
 
 .modal__dialog--visible {
@@ -1869,6 +1881,12 @@ template {
 }
 
 @media (max-width: 992px) {
+  .hover:hover {
+    background-color: #EC1F46;
+  }
+  a:hover {
+    color: inherit;
+  }
   .container, .newsletter-wrapper {
     max-width: 700px;
   }
@@ -2102,6 +2120,12 @@ template {
   }
 }
 
+@media (max-width: 750px) {
+  .activities-card {
+    width: 100%;
+  }
+}
+
 @media (max-width: 740px) {
   .navbar__search {
     margin-right: 45px;
@@ -2111,9 +2135,36 @@ template {
   }
   .booking {
     width: 48%;
+    margin-right: 30px;
   }
-  .activities-card {
-    width: 100%;
+  .footer__additional {
+    -ms-grid-column: 4;
+        grid-column-start: 4;
+    grid-column-end: 8;
+  }
+  .footer__categories {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .footer__legal {
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 4;
+    margin-left: 0;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .footer__contact-details {
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  .footer__contact-form {
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+    grid-row-end: 6;
   }
 }
 
@@ -2141,6 +2192,9 @@ template {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .newsletter__title {
+    margin-bottom: 37px;
   }
 }
 
@@ -2278,6 +2332,7 @@ template {
   }
   .booking {
     width: 100%;
+    margin-right: 0px;
   }
   .map {
     width: 100%;
@@ -2521,6 +2576,9 @@ template {
   .navbar-menu {
     padding-top: 31px;
   }
+  .navbar-bottom {
+    top: 60px;
+  }
   .booking__pricetag {
     line-height: 30px;
   }
@@ -2660,16 +2718,6 @@ template {
     width: 100%;
     font-size: 12px;
     line-height: 15px;
-  }
-}
-
-@media (max-height: 500px) {
-  .navbar-bottom {
-    overflow: auto;
-  }
-  .modal__dialog {
-    height: 95vh;
-    overflow: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
