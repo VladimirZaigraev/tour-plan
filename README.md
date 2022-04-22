@@ -14,7 +14,7 @@
   - Flex-box
   - Grid
   - Pixel Perfect - отклонение от макета в пределах 5px
-4. JavaScript
+4. jquery - 
 5. PHP - подключение PHPMailer для отправки писем
 6. Google карты - для демонстрации метоположения отеля
 
