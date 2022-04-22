@@ -2,14 +2,25 @@
 
 Ссылка на ghpage: https://vladimirzaigraev.github.io/tour-plan/
 
+![Image alt](https://github.com/VladimirZaigraev/tour-plan/blob/main/tour.jpg)
+
 ### Функциональность проекта
 Адаптивная страница страница с анимацией наведения, слайдером, открытием модальных окон и отправки писем из формы.
 
 ### Применяемые технологии
-1. html
-2. CSS
-  - flex-box
-  - grid
+1. html - семантическиая верстка
+  - БЭМ - методология названия классов
+3. CSS
+  - Flex-box
+  - Grid
+  - Pixel Perfect - отклонение от макета в пределах 5px
+4. JavaScript
+5. PHP - подключение PHPMailer для отправки писем
+6. Google карты - для демонстрации метоположения отеля
+
+### Ограничения
+Ограничений нет
+
   
   
 
